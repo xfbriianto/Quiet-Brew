@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =====================
+   Global Base Styles
+   ===================== */
+
+body {
+  background-color: #fcf9f8;
+  color: #1b1c1c;
+  font-family: "Inter", sans-serif;
+}
+
+/* Selection color (dari HTML) */
+::selection {
+  background-color: #f2ddbf; /* secondary-container */
+  color: #1b1c1c;
+}
+
+/* =====================
+   Material Symbols
+   ===================== */
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+/* =====================
+   Utility Classes (opsional, jika tidak menggunakan Tailwind)
+   ===================== */
+
+.glass-nav {
+  background: rgba(252, 249, 248, 0.8);
+  backdrop-filter: blur(12px);
+}
+
+.premium-shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.soft-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+}
+
+/* Kelas ini sudah dihandle oleh Tailwind jika boxShadow.premium ditambahkan,
+   namun tetap aman untuk didefinisikan di CSS */
+.shadow-premium {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.rounded-custom {
+  border-radius: 20px;
+}
