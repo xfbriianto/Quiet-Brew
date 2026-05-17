@@ -17,7 +17,7 @@ const Footer = () => {
               Quiet Brew
             </span>
             <p className="font-body-md text-[13px] text-on-secondary-fixed-variant/70 leading-relaxed">
-              © 2024 Quiet Brew.<br />Slow living in every sip.
+              © 2026 Quiet Brew.<br />Slow living in every sip.
             </p>
           </div>
 
