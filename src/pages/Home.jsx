@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
+
 
 // Animation variants
 const fadeUp = {
@@ -42,12 +44,16 @@ export default function Home() {
             quiet reflection.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-primary text-on-primary font-label-md text-label-md px-10 py-4 rounded-20px hover:translate-y-[-4px] transition-transform duration-200 premium-shadow">
-              View Menu
-            </button>
-            <button className="border-2 border-primary text-primary font-label-md text-label-md px-10 py-4 rounded-20px hover:bg-primary/5 transition-colors duration-200">
-              Reserve Table
-            </button>
+  <Link to="/menu">
+    <button className="bg-primary text-on-primary font-label-md text-label-md px-10 py-4 rounded-20px hover:translate-y-[-4px] transition-transform duration-200 premium-shadow">
+      View Menu
+    </button>
+  </Link>
+  <Link to="/reservation">
+    <button className="border-2 border-primary text-primary font-label-md text-label-md px-10 py-4 rounded-20px hover:bg-primary/5 transition-colors duration-200">
+      Reserve Table
+    </button>
+  </Link>
           </div>
         </div>
         <div className="relative h-[600px] rounded-20px overflow-hidden premium-shadow">
